@@ -1,0 +1,65 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.png);
+}
+
+.wrapper {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parent {
+    width: 25%;
+    margin: 20px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    transition: all 1.s;
+    background-size: cover;
+}
+
+.bg-one {
+    background-image: url(images/1.jpg);
+    background-size: contain;
+}
+
+.bg-two {
+    background-image: url(images/0001.jpg);
+    background-size: contain;
+}
+
+.bg-three {
+    background-image: url(images/2.jpg);
+    background-size: contain;
+}
+
+.bg-four {
+    background-image: url(images/3.jpg);
+    background-size: contain;
+}
+
+.bg-five {
+    background-image: url(images/4.jpg);
+    background-size: contain;
+}
+
+.bg-six {
+    background-image: url(images/6.jpg);
+    background-size: contain;
+}
+
+.parent:hover .child {
+    transform: scale(1.2);
+}
